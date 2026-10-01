@@ -1,0 +1,13 @@
+# Build output
+dist/
+
+# macOS metadata
+.DS_Store
+
+# Local-only working notes (absolute paths, session IDs); never published
+_c-plans/
+_c-tools/
+
+# Compiler artifacts
+*.o
+*.d
