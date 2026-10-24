@@ -11,3 +11,15 @@ _c-tools/
 # Compiler artifacts
 *.o
 *.d
+
+# Local credentials
+.env
+.env.*
+!.env.example
+credentials.json
+credentials.yaml
+credentials.yml
+credentials/
+*.key
+*.pem
+*.token
