@@ -6,7 +6,7 @@
 | D2 | AppKit/WKWebView with default persistent store | Smallest existing implementation; official Google login, no extra runtime. |
 | D3 | Real child WKWebView for popup sign-in | Preserve opener/configuration; Opus review accepted this correction. |
 | D4 | Name Gtext, ID local.mareox.gtext | User approved before initial pairing; keep stable. |
-| D5 | Icon A, midnight signal | User-selected and Dock appearance user-confirmed. |
+| D5 | Icon v3 B, Cobalt | MareoX selected B on 2026-10-27, replacing the previously confirmed midnight-signal A. Original G-shaped speech bubble; Dock appearance needs verification after deployment. |
 | D6 | Fail-once first-pair trial | No hidden re-pair/reset to manufacture a reliability pass. |
 | D7 | Single project in the user-requested macos-gtext folder | Previous relative destination was resolved incorrectly. Source and Git metadata copied byte-identically; redundant Gtext directories trashed after validation. |
 | D8 | Plan Texty parity, do not implement it yet | User requested a plan. Native integrations use original Gtext code and system frameworks, not Texty scripts/artwork. |

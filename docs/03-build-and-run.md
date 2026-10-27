@@ -12,9 +12,9 @@ Expected: plist OK, strict signature verification succeeds, bundle ID exactly `l
 
 ## Selected artwork
 
-[Icon A](../Resources/icon-v2-a.png) is the selected master: a bold white G centered on the blue speech bubble. The original generator uses logical 1024 units; on this Retina host its PNG is 2048x2048. Do not copy it unchanged into a slot named 512@2x and assume that is 1024 pixels. Explicitly resize to each ICNS representation.
+[Cobalt B](../Resources/icon-v3-b.png) is the selected master: a white G-shaped speech bubble on a cobalt rounded tile. The master is exactly 1024x1024 pixels. [Compare both v3 candidates](../Resources/icon-v3-comparison.png).
 
-The current bundle consumes the checked-in [Gtext.icns](../Resources/Gtext.icns); normal builds do not regenerate it. To regenerate use `swift scripts/make_icon_v2.swift`, then resize A into a temporary iconset: icon_16x16=16, 16@2x=32, 32=32, 32@2x=64, 128=128, 128@2x=256, 256=256, 256@2x=512, 512=512, 512@2x=1024; compile with `iconutil -c icns <iconset> -o Resources/Gtext.icns`. B/C are experiments, not shipped artwork; trash generated experiments after selecting A.
+The current bundle consumes the checked-in [Gtext.icns](../Resources/Gtext.icns); normal builds do not regenerate it. To regenerate use `swift scripts/make_icon_v3.swift`, then resize `icon-v3-b.png` into a temporary iconset: icon_16x16=16, 16@2x=32, 32=32, 32@2x=64, 128=128, 128@2x=256, 256=256, 256@2x=512, 512=512, 512@2x=1024; compile with `iconutil -c icns <iconset> -o Resources/Gtext.icns`. Emerald A remains an unselected alternative.
 
 ## Private trial logger
 

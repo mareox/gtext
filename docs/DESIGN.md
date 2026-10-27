@@ -2,7 +2,7 @@
 
 ## Identity
 
-Display/app/executable: Gtext. Bundle ID: `local.mareox.gtext`. Selected icon: A, midnight signal, at [PNG](../Resources/icon-v2-a.png) and [ICNS](../Resources/Gtext.icns). Dark indigo rounded tile with a filled cyan-to-blue speech bubble and a bold white G in the center. No Google wordmark or Texty artwork is copied.
+Display/app/executable: Gtext. Bundle ID: `local.mareox.gtext`. Selected icon: v3 B, Cobalt, at [PNG](../Resources/icon-v3-b.png) and [ICNS](../Resources/Gtext.icns). A white G-shaped speech bubble on a cobalt rounded tile. WhatsApp and Signal informed the messaging aesthetic; no logos, Google wordmark, or Texty artwork were copied.
 
 ## Current interaction
 
