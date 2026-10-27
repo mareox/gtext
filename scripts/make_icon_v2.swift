@@ -1,7 +1,7 @@
 import AppKit
 
 // Renders three Gtext icon concepts (1024x1024) into Resources/.
-// A: midnight signal — dark indigo, gradient-stroke bubble outline.
+// A: midnight signal — dark indigo, blue bubble with a centered white G.
 // B: paper — light background, single bold blue bubble.
 // C: aurora — vivid diagonal gradient, overlapping white bubbles.
 // Run: swift scripts/make_icon_v2.swift
@@ -63,6 +63,12 @@ do {
         ending: NSColor(red: 0.25, green: 0.45, blue: 1.0, alpha: 1.0)
     )!.draw(in: squircle(NSRect(x: 200, y: 200, width: 624, height: 600), 160), angle: 90)
     NSGraphicsContext.restoreGraphicsState()
+    let letter = NSAttributedString(string: "G", attributes: [
+        .font: NSFont.systemFont(ofSize: 340, weight: .bold),
+        .foregroundColor: NSColor.white
+    ])
+    let size = letter.size()
+    letter.draw(at: NSPoint(x: (S - size.width) / 2, y: (S - size.height) / 2))
     save(img, "icon-v2-a")
 }
 
