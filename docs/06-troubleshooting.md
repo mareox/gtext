@@ -10,7 +10,7 @@ If still paired but connectivity fails, log connection-error. After service reco
 
 ## Icon is wrong in Dock
 
-Compare Resources/Gtext.icns and dist/Gtext.app/Contents/Resources/Gtext.icns; inspect CFBundleIconFile. The current working plist has no CFBundleIconName key. Confirm the actual running app path before rebuilding a different copy. If the resource is correct and app was rebuilt, fully quit and reopen first. Do not clear auth data; repeated Dock restarts are not diagnosis.
+Compare Resources/Gtext.icns and dist/Gtext.app/Contents/Resources/Gtext.icns; inspect CFBundleIconFile. The current working plist has no CFBundleIconName key. Confirm the actual running app path before rebuilding a different copy. If the resource is correct and app was rebuilt, fully quit and reopen first. If the app shows the new icon but the Dock still shows the old one, restart Dock once with `killall Dock` and reopen the verified bundle. This resolved the Cobalt icon on 2026-10-27, confirmed by MareoX. Do not clear auth data; repeated Dock restarts are not diagnosis.
 
 ## Build fails
 
